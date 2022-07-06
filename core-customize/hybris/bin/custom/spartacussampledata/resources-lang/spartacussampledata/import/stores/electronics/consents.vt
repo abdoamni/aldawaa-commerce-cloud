@@ -8,7 +8,7 @@
 # Language
 \$lang=$lang.toLowerCase()
 
-\$siteUid=electronics-spa
+\$siteUid=electronics
 
 #set( $consents = $query.load('consents') )
 UPDATE ConsentTemplate;id[unique=true];name[lang=\$lang];description[lang=\$lang];version[unique=true];baseSite(uid)[unique=true,default=\$siteUid];exposed

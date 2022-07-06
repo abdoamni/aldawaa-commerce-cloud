@@ -8,7 +8,7 @@
 #
 # Import the CMS content for the Electronics site emails
 #
-$contentCatalog=electronics-spaContentCatalog
+$contentCatalog=electronicsContentCatalog
 $contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
 $lang=en
 $wideContent=CMSImageComponent,BannerComponent
@@ -18,20 +18,20 @@ $emailResource=$config-emailResourceValue
 
 ###### CMS components velocity templates ######
 INSERT_UPDATE RendererTemplate;code[unique=true];contextClass;rendererType(code)[default='velocity']
-;electronics-spa-CMSImageComponent-template;java.util.Map
-;electronics-spa-BannerComponent-template;java.util.Map
-;electronics-spa-SimpleBannerComponent-template;java.util.Map
-;electronics-spa-CMSLinkComponent-template;java.util.Map
-;electronics-spa-CMSParagraphComponent-template;java.util.Map
+;electronics-CMSImageComponent-template;java.util.Map
+;electronics-BannerComponent-template;java.util.Map
+;electronics-SimpleBannerComponent-template;java.util.Map
+;electronics-CMSLinkComponent-template;java.util.Map
+;electronics-CMSParagraphComponent-template;java.util.Map
 
 
 ###### CMS components and Email velocity templates ######
 UPDATE RendererTemplate;code[unique=true];description[lang=$lang];templateScript[lang=$lang,translator=de.hybris.platform.commerceservices.impex.impl.FileLoaderValueTranslator]
-;electronics-spa-BannerComponent-template;"CMSBannerComponent Template";$emailResource/email-bannerComponentTemplate.vm
-;electronics-spa-CMSImageComponent-template;"CMSImageComponent Template";$emailResource/email-cmsImageComponentTemplate.vm
-;electronics-spa-CMSLinkComponent-template;"CMSLinkComponent Template";$emailResource/email-cmsLinkComponentTemplate.vm
-;electronics-spa-CMSParagraphComponent-template;"CMSParagraphComponent Template";$emailResource/email-cmsParagraphComponentTemplate.vm
-;electronics-spa-SimpleBannerComponent-template;"CMSSimpleBannerComponent Template";$emailResource/email-bannerComponentTemplate.vm
+;electronics-BannerComponent-template;"CMSBannerComponent Template";$emailResource/email-bannerComponentTemplate.vm
+;electronics-CMSImageComponent-template;"CMSImageComponent Template";$emailResource/email-cmsImageComponentTemplate.vm
+;electronics-CMSLinkComponent-template;"CMSLinkComponent Template";$emailResource/email-cmsLinkComponentTemplate.vm
+;electronics-CMSParagraphComponent-template;"CMSParagraphComponent Template";$emailResource/email-cmsParagraphComponentTemplate.vm
+;electronics-SimpleBannerComponent-template;"CMSSimpleBannerComponent Template";$emailResource/email-bannerComponentTemplate.vm
  
 
 ###### Email CMS data for stock notification ######

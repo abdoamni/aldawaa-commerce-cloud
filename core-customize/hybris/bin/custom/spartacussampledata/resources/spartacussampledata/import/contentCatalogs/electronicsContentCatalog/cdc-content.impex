@@ -6,7 +6,7 @@
 # except as noted otherwise in the LICENSE file.
 # -----------------------------------------------------------------------
 #
-$contentCatalog=electronics-spaContentCatalog
+$contentCatalog=electronicsContentCatalog
 $contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
 $siteResource=jar:de.hybris.platform.spartacussampledata.constants.SpartacussampledataConstants&/spartacussampledata/import/contentCatalogs/electronicsContentCatalog
 

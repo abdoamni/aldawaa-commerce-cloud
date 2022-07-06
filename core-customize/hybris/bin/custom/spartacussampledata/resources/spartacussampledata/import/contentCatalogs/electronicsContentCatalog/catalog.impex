@@ -7,7 +7,7 @@
 # -----------------------------------------------------------------------
 #
 $contentCatalog=electronicsContentCatalog
-$spaContentCatalog=electronics-spaContentCatalog
+$spaContentCatalog=electronicsContentCatalog
 $language=en
 $languages=ja,en,de,zh
 

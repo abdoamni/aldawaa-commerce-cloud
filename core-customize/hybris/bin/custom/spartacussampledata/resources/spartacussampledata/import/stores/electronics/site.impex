@@ -6,8 +6,8 @@
 # except as noted otherwise in the LICENSE file.
 # -----------------------------------------------------------------------
 #
-$spaSiteUid=electronics-spa
-$spaContentCatalog=electronics-spaContentCatalog
+$spaSiteUid=electronics
+$spaContentCatalog=electronicsContentCatalog
 $spaContentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$spaContentCatalog]),CatalogVersion.version[default=Staged])[default=$spaContentCatalog:Staged]
 
 $productCatalog=electronicsProductCatalog
@@ -22,7 +22,7 @@ $fullPathElectronics=https://localhost:4200
 $language=en
 $currency=USD
 
-### The last url pattern below is a wildcard for http(s)://localhost.* and should not be used in other sites than `electronics-spa`
+### The last url pattern below is a wildcard for http(s)://localhost.* and should not be used in other sites than `electronics`
 $urlPatterns=(?i)^https?://[^/]+(/[^?]*)?\?(.*\&)?(site=$spaSiteUid)(|\&.*)$,(?i)^https?://$spaSiteUid\.[^/]+(|/.*|\?.*)$,(?i)^https?://api\.hybrisdev\.com(:[\d]+)?/rest/.*$,(?i)^https?://localhost(:[\d]+)?/rest/.*$,(?i)^https?://[^/]+/$spaSiteUid(|/.*|\?.*|#.*)$,(?i)^https?://localhost(:[\d]+)?/?$
 $urlEncodingAttributes=storefront,language,currency
 

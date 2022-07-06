@@ -6,7 +6,7 @@
 #
 #set($escContentCV=$esc.java('$contentCV[unique=true]'))
 # Email CMS data for stock notification
-\$contentCatalog=electronics-spaContentCatalog
+\$contentCatalog=electronicsContentCatalog
 \$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=\$contentCatalog]),CatalogVersion.version[default=Staged])[default=\$contentCatalog:Staged]
 \$emailResource=jar:de.hybris.platform.spartacussampledata.constants.SpartacussampledataConstants&/spartacussampledata/import/emails
 \$lang=$lang.toLowerCase()
